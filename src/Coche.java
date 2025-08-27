@@ -5,7 +5,7 @@ public class Coche {
     private boolean encendido  ;
 
 // constructor
-    public Coche(String marca, String modelo, String color) {
+     public Coche(String marca, String modelo, String color) {
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
@@ -39,10 +39,12 @@ public class Coche {
     }
     //setter (modificacion de atributos
     public void setMarca(String marca) {
-        this.color=color;
+        this.marca=marca;
 
     }
 
-
+    public void setColor (String colorN){
+        this.color = colorN;
     }
+
 }
