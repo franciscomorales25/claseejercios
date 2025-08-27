@@ -39,7 +39,7 @@ public class Coche {
     }
     //setter (modificacion de atributos
     public void setMarca(String marca) {
-        this.color=color;
+        this.marca=marca;
 
     }
 
