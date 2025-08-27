@@ -2,9 +2,9 @@ public class Coche {
     private String marca;
     private String modelo;
     private String color;
-    private boolean encendido  ;
+    private boolean encendido;
 
-// constructor
+    // constructor
     public Coche(String marca, String modelo, String color) {
         this.marca = marca;
         this.modelo = modelo;
@@ -13,15 +13,26 @@ public class Coche {
 
 
     }
+
     //metodos
-    public void arrancar(){
+    public void arrancar() {
         this.encendido = true;
-        System.out.println("El coche arranca ");
+        System.out.println("✅ El coche " + this.marca + " ha arrancado ");
+        System.out.println();
     }
-    public void apagar(){
+
+    public void apagar() {
         this.encendido = false;
-        System.out.println("El coche apagado ");
+        System.out.println("🛑 El coche " + this.marca + " se ha apagado ");
+        System.out.println();
     }
+
+    public void describir() {
+        String estado = this.encendido ? "encendido" : "apagado";
+        System.out.println("🚗 Este es un coche " + getMarca() + " de color " + getColor() + " y se encuentra " + estado);
+        System.out.println();
+    }
+
     //getter lectura de atributos
     public String getMarca() {
         return marca;
@@ -29,20 +40,26 @@ public class Coche {
 
     public String getModelo() {
         return modelo;
-    }public String getColor() {
+    }
 
+    public String getColor() {
         return color;
+    }
 
-    }public boolean isEncendido() {
+    public boolean isEncendido() {
 
         return encendido;
     }
-    //setter (modificacion de atributos
-    public void setMarca(String marca) {
-        this.color=color;
 
-    }
-
-
+    public void pintar(String nuevoColor) {
+        this.color = nuevoColor;
+        System.out.println("🎨 Coche " + this.marca + " ha sido pintado de color " + this.color);
+        System.out.println();
     }
 }
+
+
+
+
+
+
