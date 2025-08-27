@@ -10,9 +10,8 @@ public class Coche {
         this.modelo = modelo;
         this.color = color;
         this.encendido = false;
-
-
     }
+
     //metodos
     public void arrancar(){
         this.encendido = true;
@@ -29,20 +28,22 @@ public class Coche {
 
     public String getModelo() {
         return modelo;
-    }public String getColor() {
-
-        return color;
-
-    }public boolean isEncendido() {
-
-        return encendido;
     }
-    //setter (modificacion de atributos
+
+    public String getColor() { return color; }
+
+    public boolean isEncendido() { return encendido; }
+
+    //setter (modificacion de atributos)
     public void setMarca(String marca) {
-        this.color=color;
-
+        this.marca = marca;
     }
 
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
 
+    public void setColor(String color) {
+        this.color = color;
     }
 }
