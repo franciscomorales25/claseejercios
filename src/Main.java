@@ -2,14 +2,23 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+      
+        // Crear un objeto de tipo Coche
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Coche miCoche = new Coche("Toyota", "Rojo");
+         // Mostrar información inicial del coche
+        miCoche.mostrarInfo();
+
+        // Encender el coche
+        miCoche.encender();
+
+                // Cambiar el color del coche
+                miCoche.cambiarColor("Negro");
+                miCoche.mostrarInfo();
+
+                // Apagar el coche
+                miCoche.apagar();
+     
         }
     }
 }
