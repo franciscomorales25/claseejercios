@@ -38,11 +38,8 @@ public class Coche {
         return encendido;
     }
     //setter (modificacion de atributos
-    public void setMarca(String marca) {
+    public void setColor(String color) {
         this.color=color;
 
-    }
-
-
-    }
+    }    
 }
