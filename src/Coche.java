@@ -39,10 +39,20 @@ public class Coche {
     }
     //setter (modificacion de atributos
     public void setMarca(String marca) {
-        this.color=color;
+        this.marca=marca;
 
     }
 
-
-    }
+public void setModelo(String modelo) {
+        this.modelo=modelo;
 }
+public void setColor(String color) {
+        this.color=color;
+}
+public void mostrarInfo(){
+    System.out.println("Marca: "+marca);
+    System.out.println("Modelo: "+modelo);
+    System.out.println("Color: "+color);
+}
+}
+
