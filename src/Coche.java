@@ -42,7 +42,4 @@ public class Coche {
         this.color=color;
 
     }
-
-
-    }
 }
