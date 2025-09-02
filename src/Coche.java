@@ -1,4 +1,5 @@
 public class Coche {
+
     private String marca;
     private String modelo;
     private String color;
@@ -22,27 +23,46 @@ public class Coche {
         this.encendido = false;
         System.out.println("El coche apagado ");
     }
-    //getter lectura de atributos
+
     public String getMarca() {
         return marca;
     }
 
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
     public String getModelo() {
         return modelo;
-    }public String getColor() {
+    }
 
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getColor() {
         return color;
+    }
 
-    }public boolean isEncendido() {
+    public void setColor(String color) {
+        this.color = color;
+    }
 
+    public boolean isEncendido() {
         return encendido;
     }
-    //setter (modificacion de atributos
-    public void setMarca(String marca) {
-        this.color=color;
 
+    public void setEncendido(boolean encendido) {
+        this.encendido = encendido;
     }
 
-
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", color='" + color + '\'' +
+                ", encendido=" + encendido +
+                '}';
     }
 }
